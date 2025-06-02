@@ -1,0 +1,374 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tangan2.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(10);
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+}
+
+.hero h4 {
+  font-size: 1.2rem;
+}
+
+.hero h1 .hero h4 .hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+/* Navbar */
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* Home Section */
+
+.home {
+  background-image: url(../img/floral.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -3rem;
+  padding-top: 9rem;
+  padding-bottom: 4rem;
+}
+
+.home h2,
+.gallery h2 {
+  color: var(--pink);
+  font-family: "sacramento", cursive;
+  font-weight: bold;
+  font-size: 4.2rem;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.home p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.home .couple {
+  margin-top: 80px !important ;
+}
+
+.home .couple h3 {
+  font-family: "sacramento", cursive;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+/* Info Section */
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5.5rem;
+}
+
+.info h2 {
+  color: var(--pink);
+  font-family: "sacramento", cursive;
+  font-size: 4.1rem;
+  font-weight: bold;
+}
+
+.info .alamat {
+  font-size: 1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border: 1px solid white;
+}
+
+.info .card-header {
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white !important;
+}
+
+/* Section Gallery */
+.gallery {
+  background-color: #f5f5f5;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.gallery span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gallery p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* RSVP Section */
+
+.rsvp {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background-color: var(--bg);
+}
+
+.rsvp h2,
+.gifts h2 {
+  color: var(--pink);
+  font-family: "sacramento", cursive;
+  font-size: 3.3rem;
+  font-weight: bold;
+}
+
+.rsvp p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.rsvp form label {
+  color: white;
+  font-size: 1rem;
+}
+
+.rsvp button {
+  color: white !important;
+  background-color: var(--pink) !important;
+  border: 1px solid var(--pink) !important;
+}
+
+.rsvp button:hover {
+  color: var(--pink) !important;
+  background-color: white !important;
+  border: 1px solid white !important;
+}
+
+/* gifts section*/
+
+.gifts {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.gifts span {
+  font-size: 1rem;
+}
+
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg);
+}
+
+/* footer */
+
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+/* audio */
+
+.audio-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: putar 3s linear infinite;
+  transform-origin: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: 0;
+}
+
+@keyframes putar {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 46px;
+  }
+
+  .home .heart {
+    display: none;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.sticky-top {
+  overflow: hidden;
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 10px;
+    margin: -3px;
+  }
+}
